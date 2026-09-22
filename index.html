@@ -5,62 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aura Interiores</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Cormorant+Garamond:wght@300;400;500&display=swap');
-*{margin:0;padding:0;box-sizing:border-box;}
-body{background:#F5F1E9;color:#2B2B2B;font-family:'Montserrat',sans-serif;}
-header{display:flex;justify-content:space-between;align-items:center;padding:28px 60px;background:#F5F1E9;}
-.logo-text-img{height:38px;object-fit:contain;}
-.logo-ar{width:58px;height:58px;object-fit:contain;}
-.hero{display:flex;align-items:center;justify-content:space-between;padding:40px 60px 80px;gap:40px;}
-.hero-left h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;line-height:1.05;margin-bottom:25px;max-width:420px;}
-.btn{display:inline-block;background:#2B2B2B;color:white;padding:14px 28px;font-size:11px;letter-spacing:2.5px;text-decoration:none;text-transform:uppercase;}
-.hero-right{flex:1;max-width:600px;}
-.hero-right img{width:100%;height:380px;object-fit:cover;}
-.quem-somos{background:#EDE6D6;padding:80px 60px;text-align:center;}
-.quem-somos h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;margin-bottom:18px;}
-.quem-somos p{max-width:620px;margin:0 auto 42px;font-size:15px;line-height:1.7;color:#5A5A5A;}
-.quem-somos-foto{max-width:520px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,0.12);}
-.quem-somos-foto img{width:100%;display:block;}
-.servicos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:60px;}
-.card{height:300px;position:relative;overflow:hidden;}
-.card img{width:100%;height:100%;object-fit:cover;}
-.card span{position:absolute;bottom:18px;left:18px;color:white;font-size:13px;letter-spacing:1px;background:rgba(0,0,0,0.35);padding:6px 12px;}
-footer{text-align:center;padding:44px;background:#2B2B2B;color:#F5F1E9;}
-footer a{color:#F5F1E9;text-decoration:none;border:1px solid #F5F1E9;padding:10px 22px;display:inline-block;margin-top:14px;font-size:13px;letter-spacing:1px;}
-@media(max-width:768px){header{padding:18px 20px}.logo-text-img{height:30px}.hero{flex-direction:column;padding:20px}.hero-left h1{font-size:34px}.quem-somos{padding:44px 20px}.servicos{grid-template-columns:1fr;padding:20px}}
+body{margin:0;font-family:sans-serif;background:#faf7f3}
+.header{display:flex;justify-content:space-between;align-items:center;padding:18px 30px;background:#fff;position:sticky;top:0}
+.logo-area{display:flex;align-items:center;gap:12px}
+.logo-area img{height:38px}
+.hero{height:80vh;background:url('aura.jpg') center/cover;display:flex;align-items:center;justify-content:center;color:#fff;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.hero-content{position:relative;z-index:1;text-align:center}
+.btn{display:inline-block;margin-top:20px;padding:12px 28px;border:1px solid #fff;color:#fff;text-decoration:none}
 </style>
 </head>
 <body>
-<header>
-<img src="aura_text_logo.png" alt="Aura Interiores" class="logo-text-img">
-<img src="logo.png" alt="AR Logo" class="logo-ar">
-</header>
-<section class="hero">
-<div class="hero-left">
-<h1>Design de interiores com alma</h1>
-<a href="https://wa.me/5532998304518" class="btn">FALE CONOSCO</a>
+<div class="header">
+  <div class="logo-area">
+    <img src="logo.png.jpeg" alt="logo AR">
+    <img src="aura_text_logo.png" alt="Aura" style="height:26px" onerror="this.src='aura_text_logo.png.jpeg'">
+  </div>
+  <div>INÍCIO • PROJETOS • SOBRE</div>
 </div>
-<div class="hero-right">
-<img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800" alt="Sala">
+<div class="hero">
+  <div class="hero-content">
+    <h1>Ambientes com alma</h1>
+    <p>Design de interiores autoral</p>
+    <a class="btn" href="#">Ver projetos</a>
+  </div>
 </div>
-</section>
-<section class="quem-somos">
-<h2>Quem Somos?</h2>
-<p>Somos duas arquitetas apaixonadas por criar lares com alma. Qual dos nossos serviços é ideal para você?<br><br>Uma nova fase começa por aqui... AURA Interiores agora é feita por duas histórias, dois olhares e um mesmo propósito.</p>
-<div class="quem-somos-foto">
-<img src="aura.jpg" alt="Denise e Marcela - Aura Interiores">
-</div>
-</section>
-<section class="servicos">
-<div class="card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600"><span>Consultoria</span></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600"><span>Projeto Completo</span></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600"><span>Reforma</span></div>
-</section>
-<footer>
-<p style="font-family:'Cormorant Garamond',serif;font-size:20px;letter-spacing:1px;">Aura Interiores</p>
-<p style="margin-top:8px;font-size:13px;opacity:0.8;">São João del Rei, MG</p>
-<a href="https://wa.me/5532998304518?text=Ola,%20vim%20pelo%20site%20da%20Aura">WhatsApp: (32) 99830-4518</a>
-<p style="margin-top:22px;font-size:12px;opacity:0.6;">Instagram: @aura_interiores_</p>
-</footer>
 </body>
 </html>
